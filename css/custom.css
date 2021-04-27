@@ -1,0 +1,433 @@
+html {
+    overflow-x: hidden;
+}
+a {
+    outline: none;
+}
+.main-container {
+display: flex;
+justify-content: center;
+background-color: #fff;
+margin-top: 48px;
+}
+.subject-side { 
+width: 200px;
+}
+.brn-subject-list li {
+list-style: none;
+margin-left: -16px;
+padding-bottom: 8px;
+}
+
+.brn-subject-list__icon {
+display: inline;
+vertical-align: -30%;
+margin-right: 8px;
+}
+
+.brn-subject-list__name {
+display: inline-block;
+vertical-align: 0.5px;
+}
+
+.sg-layout__content { 
+margin-top: 16px!important;
+margin-left: 48px;
+max-width: 700px!important;
+}
+
+.instructions {
+border-radius: 14px 14px 0px 0px!important;
+}
+
+.question:nth-child(6n-5) {
+    display: none;
+}
+
+.question {
+border-radius: 0px;
+
+}
+
+.view-count {
+width: 100px;
+background-color: #ebf2f7;
+display: inline-block;
+margin-top: 16px;
+}
+
+.view-count div {
+font-size: 14px;
+color:#000;
+}
+
+.view-count div span {
+opacity: 0.5;
+}
+
+.answerbutton {
+width: 100px;
+margin-top: 16px;
+}
+
+.aside-content {
+margin-top: 16px;
+width:350px;
+margin-left: 32px;
+}
+
+.target-counter h1 {
+text-align: center!important;
+display: inline-block;
+}
+
+.target-counter h2{
+display: inline-block;
+}
+
+.progress {
+margin:24px auto;
+padding:0;
+width:289px;
+height:15px;
+overflow:hidden;
+background:#e5e5e5;
+border-radius:6px;
+}
+
+.bar {
+position:relative;
+min-width:1%;
+height:100%;
+background: #40bd7e;
+}
+
+.percent {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+margin:0;
+font-family:tahoma,arial,helvetica;
+font-size:12px;
+color:white;
+}
+
+.rankings {
+    margin-top: 24px;
+    
+
+}
+
+.ranklist {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.user {
+    display: inline;
+    margin-left: -16px;
+}
+
+.answercount { 
+    display: inline-block;
+    margin-left: 120px;
+
+}
+
+.subject-drop {
+    display: none!important;
+}
+
+.loadmorebutton {
+    margin-top: 32px!important;
+    margin-bottom: 48px;
+}
+
+.loadingimage {
+    margin: auto;
+}
+
+.spinnertext {
+    margin-left: 8px;
+}
+
+#spinner {
+    margin-top: 24px;
+}
+
+
+.ranklist li {
+    margin-bottom: 8px;
+}
+
+
+/* responsive */
+
+/* tablets */
+
+@media (max-width:768px) {
+    .main-container {
+        margin-top: -16px;
+        margin-left: -14px;
+    }
+    .brn-subject-list { 
+        display: none;
+        }
+    .subject-drop {
+        display: block!important;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .aside-content {
+        width: 90%;
+    }
+
+    .target-counter {
+        margin-left: 10px;
+    }
+
+    .rankings {
+        margin-left: 8px;
+    }
+}
+
+
+@media (max-width: 425px) { 
+    html {
+        overflow-x: hidden;
+    }
+    .main-container {
+        margin-top: 0px;
+    }
+
+    .brn-subject-list {
+        display: none;
+    }
+
+    .subject-drop {
+        display: block!important;
+        margin-left: 16px;
+        margin-top: 24px;
+        margin-bottom: 24x;
+    }
+
+    .sg-layout__content {
+        margin-left: 35px;
+        width: 90%;
+    }
+    
+    .instructions {
+        width: 350px;
+        margin-left: 16px;
+        border-radius: 14px 14px 14px 14px!important;
+    }
+    .subject-side {
+        display: none;
+    }
+
+    .questions {
+        width: 350px!important;
+        margin-left: 16px;
+    }
+    .question {
+        width: 350px!important;
+    }
+
+    #loadMore{ 
+        margin-left: 35px;
+    }
+
+    .aside-content {
+        width: 350px!important;
+    }
+
+    .target-counter {
+        width: 350px!important;
+        margin-left: 16px;
+
+    }
+    .target-counter h1 {
+        text-align: center!important;
+        display: inline-block;
+        font-size: 30px;
+        
+    }
+        
+    .target-counter h2{
+        display: inline-block;
+    }
+        
+    .progress {
+        margin:24px auto;
+        padding:0;
+        width:100%;
+        height:24px;
+        overflow:hidden;
+        background:#e5e5e5;
+        border-radius:16px;
+    }
+        
+        .bar {
+        position:relative;
+        min-width:1%;
+        height:100%;
+        background: #40bd7e;
+        }
+        
+        .percent {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        margin:0;
+        font-family:tahoma,arial,helvetica;
+        font-size:12px;
+        color:white;
+        }
+
+    .rankings {
+        width: 350px;
+        margin-left: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .ranklist {
+        list-style: none;
+        margin-bottom: 8px;
+    }
+    
+    .user {
+        display: inline;
+        margin-left: -32px;
+    }
+    
+    .answercount { 
+        display: inline-block;
+        margin-left: 24px;
+    
+    }
+    
+
+ }
+
+ @media (max-width: 375px) { 
+    html {
+        overflow-x: hidden;
+    }
+    .main-container {
+        margin-top: 0px;
+    }
+
+    .brn-subject-list {
+        display: none;
+    }
+
+    .subject-drop {
+        display: block!important;
+        margin-left: 16px;
+        margin-top: 24px;
+        margin-bottom: 24x;
+    }
+
+    .sg-layout__content {
+        margin-left: 35px;
+        width: 90%;
+    }
+    
+    .instructions {
+        width: 300px;
+        margin-left: 16px;
+        border-radius: 14px 14px 14px 14px!important;
+    }
+    .subject-side {
+        display: none;
+    }
+
+    .questions {
+        width: 300px!important;
+        margin-left: 16px;
+    }
+    .question {
+        width: 300px!important;
+    }
+
+    #loadMore{ 
+        margin-left: 35px;
+    }
+
+    .aside-content {
+        width: 350px!important;
+    }
+
+    .target-counter {
+        width: 300px!important;
+        margin-left: 16px;
+
+    }
+    .target-counter h1 {
+        text-align: center!important;
+        display: inline-block;
+        font-size: 30px;
+        
+    }
+        
+    .target-counter h2{
+        display: inline-block;
+    }
+        
+    .progress {
+        margin:24px auto;
+        padding:0;
+        width:100%;
+        height:24px;
+        overflow:hidden;
+        background:#e5e5e5;
+        border-radius:16px;
+    }
+        
+        .bar {
+        position:relative;
+        min-width:1%;
+        height:100%;
+        background: #40bd7e;
+        }
+        
+        .percent {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        margin:0;
+        font-family:tahoma,arial,helvetica;
+        font-size:12px;
+        color:white;
+        }
+
+    .rankings {
+        width: 300px;
+        margin-left: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .ranklist {
+        list-style: none;
+        margin-bottom: 8px;
+    }
+    
+    .user {
+        display: inline;
+        margin-left: -32px;
+    }
+    
+    .answercount { 
+        display: inline-block;
+        margin-left: 24px;
+    
+    }
+    
+
+ }

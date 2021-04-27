@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainliest Challenge</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Styleguide link-->
+    <link href="https://styleguide.brainly.com/183.6.0/style-guide.css" rel="stylesheet" />
+    <!--Custom Styles-->
+    <link href="css/custom.css" rel="stylesheet" />
+
+
+    <!--TableTop
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script type='text/javascript'>
+        var publicSpreadsheetUrl =
+            'https://docs.google.com/spreadsheets/d/13Q0P8TvWmsn1S0VkqRNOqiiQ0wG3I7xEiK681pCdJ0U/pubhtml';
+
+        function init() {
+            Tabletop.init({
+                key: publicSpreadsheetUrl,
+                callback: showInfo,
+                simpleSheet: true
+            })
+        }
+        window.addEventListener('DOMContentLoaded', init)
+    </script>-->
+
+
+</head>
+
+<body>
+    <div class="sg-layout sg-layout--three-columns">
+        <!--Header-->
+        <header class="sg-header sg-header--with-divider">
+            <div class="sg-header__container">
+                <div class="sg-header__content">
+                    <div class="sg-header__left"><a href="#" class="sg-home-button"><img
+                                class="sg-home-button__logo-small"
+                                src="https://styleguide.brainly.com/images/logos/brainly-mobile-6879551770.svg"><img
+                                class="sg-home-button__logo-big"
+                                src="https://styleguide.brainly.com/images/logos/brainly-5c4a769505.svg"></a></div>
+                    <div class="sg-header__middle">
+                    </div>
+                    <!--<div class="sg-hide-for-small-only">
+                        <a href="brainlyanswerersph.slack.com/" target="_blank">
+                            <div class="sg-header__right"><button class="sg-button sg-button--solid">
+                                    <span class="sg-button__icon">
+                                        <div class="sg-icon sg-icon--adaptive sg-icon--x24">
+                                            <svg class="sg-icon__svg">
+                                                <use xlink:href="#icon-comment"></use>
+                                            </svg>
+                                        </div>
+                                    </span>
+                                    span class="sg-button__text">Go to Slack</span>
+                                </button></button>
+                            </div>
+                        </a>
+                    </div>-->
+                </div>
+            </div>
+        </header>
+        <div
+            class="main-container sg-layout__container sg-layout__container--no-max-width sg-layout__container--full-page">
+            <div class="sg-layout__secondary-content subject-side">
+                <div class="sg-flex sg-flex--full-width sg-flex--column">
+                    <div class="sg-flex sg-flex--column sg-flex--margin-bottom-xs">
+                    </div>
+                    <ul class="brn-subject-list">
+                        <li>
+                            <div role="button" class="brn-subject-list__subject brn-subject-list__subject--active"
+                                tabindex="0">
+                                <a href="index.html">
+                                <div class="brn-subject-list__icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                        <use xlink:href="#icon-subject-all"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">All subjects</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="filipino.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-language"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Filipino</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="math.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-mathematics"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Math</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="ap.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-social-science"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Araling Panlipunan
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="english.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-english"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">English</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="science.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-life-science"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Science</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="physics.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-physics"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Physics</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="chemistry.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-chemistry"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Chemistry</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="biology.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-biology"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Biology</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="history.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-history"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">History</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="geography.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-geography"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Geography</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="esp.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-philosophy"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">ESP</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="economics.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-economics"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Economics</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="tle.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-technology"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">TLE</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="int-science.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-science"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Integrated Science
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="health.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-health"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Health</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="music.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-music"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Music</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="art.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-art"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Art</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="pe.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-physical-education"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Physical Education
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div role="button" class="brn-subject-list__subject" tabindex="0">
+                                <a href="religion.html">
+                                <div class="brn-subject-list__icon"><svg
+                                        class="sg-subject-icon sg-subject-icon--small sg-subject-icon--gray">
+                                        <use xlink:href="#icon-subject-religion"></use>
+                                    </svg></div>
+                                <div class="brn-subject-list__name">
+                                    <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Religion</div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="sg-layout__content">
+                <div
+                    class="instructions sg-box sg-box--light sg-box--padding-m sg-box--border-color-dark sg-box--border">
+                    <div class="sg-flex">
+                        <div class="sg-flex sg-flex--margin-right-s">
+                            <div class="sg-icon sg-icon--adaptive sg-icon--x24">
+                                <svg class="sg-icon__svg">
+                                    <use xlink:href="#icon-verified"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="sg-flex sg-flex--column">
+                            <h1 class="sg-headline sg-headline--small">Welcome to the Bot Team's Feeder!</h1>
+                            <div class="sg-flex sg-flex--margin-top-s">
+                                <div class="sg-text sg-text--small">Here are a few things you need to remember when
+                                    using this feeder.
+                                    <ul>
+                                        <li><b>Do not share this feeder</b> to users who aren't members of the team.
+                                        </li>
+                                        <li>Use the hashtag <b>#BigBrainBrainly</b> in all your answers.</li>
+                                        <li>Go back to this feeder whenever you finish answering. Questions answered outside the feeder won't be counted.</li>
+                                        <li>Please <strong>do not delete</strong> anything. If the question already has an answer, skip it.</li>
+                                    </ul>
+                                    <!--div class="sg-text sg-text--small">Total Questions: <span id="kbsize"></span></div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subject-drop">
+                    <div class="sg-select subject-select">
+                        <select class="sg-select__element pick-subject" onchange="location=this.value;">
+                            <option value="index.html" selected>All Subjects</option>
+                            <option value="filipino.html">Filipino</option>
+                            <option value="math.html">Math</option>
+                            <option value="ap.html">AP</option>
+                            <option value="english.html">English</option>
+                            <option value="science.html">Science</option>
+                            <option value="physics.html">Physics</option>
+                            <option value="chemistry.html">Chemistry</option>
+                            <option value="biology.html">Biology</option>
+                            <option value="history.html">History</option>
+                            <option value="geography.html">Geography</option>
+                            <option value="esp.html">ESP</option>
+                            <option value="economics.html">Economics</option>
+                            <option value="tle.html">TLE</option>
+                            <option value="music.html">Music</option>
+                            <option value="int-science.html">Integrated Science</option>
+                            <option value="health.html">Health</option>
+                            <option value="art.html">Art</option>
+                            <option value="pe.html">PE</option>
+                            <option value="religion.html">Religion</option>
+                            <option value="computer.html">Computer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="loadingscreen" id="loader">
+                    <div
+                        class="question sg-box sg-box--light sg-box--padding-m sg-box--border-color-dark sg-box--border">
+                        <div class="sg-flex">
+                            <div class="sg-flex sg-flex--column">
+                                <img src="img/loading.png" class="loadingimage" width="50%" alt="">
+                                <div class="sg-spinner-container" id="spinner">
+                                    <div class="sg-spinner sg-spinner--small"></div>
+                                    <h2 class="spinnertext sg-text-bit sg-text-bit--small sg-text-bit--blue-primary">
+                                        Loading Your Questions</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="questions" class="questions">
+
+                </div>
+                <a href="#" id="loadMore"><button class="sg-button sg-button--solid loadmorebutton"><span
+                            class="sg-button__text">Load Questions</span></button></a>
+            </div>
+            <div class="sg-layout__aside-content aside-content">
+                <!--div class="sg-box sg-box--gray-secondary-ultra-light sg-box--padding-m target-counter">
+                    
+                </div>
+                <div
+                    class="rankings sg-box sg-box--light sg-box--padding-m sg-box--border-color-gray-secondary-lightest sg-box--border">
+                    <h2 class="sg-text sg-text--gray sg-text--bold">Brainliest of the Bunch</h2>
+                    <hr>
+                    <ul class="ranklist">
+                       
+                    </ul>
+                </div>
+
+            </div>-->
+        </div>
+
+    </div>
+    <script>
+        var subjName = "Filipino"
+    </script>
+    <script src="js/backtotop.js"></script>
+    <!--script src="js/scoreboard.js"></script>-->
+    <!--<script src="js/tabletop.js"></script>-->
+    <script src="js/loader.js"></script>
+    <script src="js/fetch2.js"></script>
+
+    <!--Brainly Scripts-->
+    <script src="https://styleguide.brainly.com/images/icons-9fce51c8bc.js"></script>
+    <script src="https://styleguide.brainly.com/images/subjects-icons-a01adb2d40.js"></script>
+    <script src="https://styleguide.brainly.com/images/subjects-mono-icons-341dc27120.js"></script>
+    <script src="https://styleguide.brainly.com/images/math-symbols-icons-7c9d6883f2.js"></script>
+    <script src="https://styleguide.brainly.com/images/mobile-icons-3a1d7a9090.js"></script>
+
+</body>
+
+</html>
