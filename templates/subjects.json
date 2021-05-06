@@ -1,0 +1,106 @@
+subjects  ='[
+    {
+        "Subject": "Semua mapel",
+        "icon": "all"
+    },
+    {
+        "Subject": "B. Indonesia",
+        "icon": "language"
+    },
+    {
+        "Subject": "Kimia",
+        "icon": "chemistry"
+    },
+    {
+        "Subject": "Matematika",
+        "icon": "mathematics"
+    },
+    {
+        "Subject": "Ilmu Sosial (IPS)",
+        "icon": "social-science"
+    },
+    {
+        "Subject": "B. Inggris",
+        "icon": "english"
+    },
+    {
+        "Subject": "Fisika",
+        "icon": "physics"
+    },
+    {
+        "Subject": "Biologi",
+        "icon": "biology"
+    },
+    {
+        "Subject": "Sejarah",
+        "icon": "history"
+    },
+    {
+        "Subject": "Geografi",
+        "icon": "geography"
+    },
+    {
+        "Subject": "Sosiologi",
+        "icon": "sociology"
+    },
+    {
+        "Subject": "Ekonomi",
+        "icon": "economics"
+    },
+    {
+        "Subject": "TI",
+        "icon": "technology"
+    },
+    {
+        "Subject": "Seni",
+        "icon": "art"
+    },
+    {
+        "Subject": "Penjaskes",
+        "icon": "physical-education"
+    },
+    {
+        "Subject": "B. Daerah",
+        "icon": "language"
+    },
+    {
+        "Subject": "B. Arab",
+        "icon": "arabic"
+    },
+    {
+        "Subject": "B. Jepang",
+        "icon": "japanese",
+    },
+    {
+        "Subject": "B. Mandarin",
+        "icon": "chinese"
+    },
+    {
+        "Subject": "B. Perancis",
+        "icon": "french"
+    },
+    {
+        "Subject": "B. Lain",
+        "icon": "wos"
+    },
+    {
+        "Subject": "PPKN",
+        "icon": "ethics"
+    },
+    {
+        "Subject": "Akuntansi",
+        "icon": "accountancy"
+    },
+    {
+        "Subject": "Wirausaha",
+        "icon": "business"
+    },
+    {
+        "Subject": "SBMPTN",
+        "icon": "egzam"
+    },
+    {
+        "Subject": "Ujian Nasional",
+        "icon": "egzam"
+    }
+]'
